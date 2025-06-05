@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Online Code Editor <i class="fas fa-code"></i></h1>
+            <div class="controls">
+                <button id="run-btn"><i class="fas fa-play"></i> Run</button>
+                <button id="save-btn"><i class="fas fa-save"></i> Save</button>
+                <button id="theme-btn"><i class="fas fa-moon"></i> Toggle Theme</button>
+                <select id="project-select">
+                    <option value="">Select Project</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="editor-container">
+            <div class="left">
+                <div class="editor-wrapper">
+                    <div class="editor-header">
+                        <i class="fa-brands fa-html5"></i> HTML
+                    </div>
+                    <textarea id="html-code"></textarea>
+                </div>
+                
+                <div class="editor-wrapper">
+                    <div class="editor-header">
+                        <i class="fa-brands fa-css3-alt"></i> CSS
+                    </div>
+                    <textarea id="css-code"></textarea>
+                </div>
+                
+                <div class="editor-wrapper">
+                    <div class="editor-header">
+                        <i class="fa-brands fa-js"></i> JavaScript
+                    </div>
+                    <textarea id="js-code"></textarea>
+                </div>
+            </div>
+            
+            <div class="resizer" id="resizer"></div>
+            
+            <div class="right">
+                <div class="output-header">
+                    <i class="fa-solid fa-play"></i> Output
+                </div>
+                <iframe id="output"></iframe>
+                <div class="console-header">
+                    <i class="fas fa-terminal"></i> Console
+                </div>
+                <div id="console"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/closebrackets.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
