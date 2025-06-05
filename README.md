@@ -2,7 +2,7 @@
 
 A responsive, feature-rich web-based code editor with real-time preview, project saving, and console output. Built with HTML, CSS, and JavaScript using CodeMirror.
 
-**Live Demo**: [https://hafsa-developer.github.io/Online-Code-Editor](https://yourusername.github.io/repo-name)
+**Live Demo**: [https://hafsa-developer.github.io/Online-Code-Editor](https://hafsa-developer.github.io/Online-Code-Editor/)
 
 ## Features ✨
 
